@@ -15,6 +15,9 @@
 		6FE4CA651C9BC889003A1096 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6FE4CA631C9BC889003A1096 /* LaunchScreen.storyboard */; };
 		6FE4CA701C9BC889003A1096 /* UseWebpPictureTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FE4CA6F1C9BC889003A1096 /* UseWebpPictureTests.m */; };
 		6FE4CA7B1C9BC889003A1096 /* UseWebpPictureUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FE4CA7A1C9BC889003A1096 /* UseWebpPictureUITests.m */; };
+		6FE4CA8A1C9BC8B0003A1096 /* UIImage+WebP.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FE4CA891C9BC8B0003A1096 /* UIImage+WebP.m */; };
+		6FE4CA8E1C9BC9EE003A1096 /* WebP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FE4CA8D1C9BC9EE003A1096 /* WebP.framework */; };
+		6FE4CA981C9BCC1A003A1096 /* Rosetta.webp in Resources */ = {isa = PBXBuildFile; fileRef = 6FE4CA941C9BCC1A003A1096 /* Rosetta.webp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,10 @@
 		6FE4CA761C9BC889003A1096 /* UseWebpPictureUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UseWebpPictureUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FE4CA7A1C9BC889003A1096 /* UseWebpPictureUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UseWebpPictureUITests.m; sourceTree = "<group>"; };
 		6FE4CA7C1C9BC889003A1096 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6FE4CA881C9BC8B0003A1096 /* UIImage+WebP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+WebP.h"; sourceTree = "<group>"; };
+		6FE4CA891C9BC8B0003A1096 /* UIImage+WebP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+WebP.m"; sourceTree = "<group>"; };
+		6FE4CA8D1C9BC9EE003A1096 /* WebP.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = WebP.framework; sourceTree = "<group>"; };
+		6FE4CA941C9BCC1A003A1096 /* Rosetta.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = Rosetta.webp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6FE4CA8E1C9BC9EE003A1096 /* WebP.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,9 +109,12 @@
 		6FE4CA541C9BC889003A1096 /* UseWebpPicture */ = {
 			isa = PBXGroup;
 			children = (
+				6FE4CA8D1C9BC9EE003A1096 /* WebP.framework */,
+				6FE4CA8B1C9BC8BD003A1096 /* Webp */,
 				6FE4CA581C9BC889003A1096 /* AppDelegate.h */,
 				6FE4CA591C9BC889003A1096 /* AppDelegate.m */,
 				6FE4CA5B1C9BC889003A1096 /* ViewController.h */,
+				6FE4CA941C9BCC1A003A1096 /* Rosetta.webp */,
 				6FE4CA5C1C9BC889003A1096 /* ViewController.m */,
 				6FE4CA5E1C9BC889003A1096 /* Main.storyboard */,
 				6FE4CA611C9BC889003A1096 /* Assets.xcassets */,
@@ -138,6 +149,15 @@
 				6FE4CA7C1C9BC889003A1096 /* Info.plist */,
 			);
 			path = UseWebpPictureUITests;
+			sourceTree = "<group>";
+		};
+		6FE4CA8B1C9BC8BD003A1096 /* Webp */ = {
+			isa = PBXGroup;
+			children = (
+				6FE4CA881C9BC8B0003A1096 /* UIImage+WebP.h */,
+				6FE4CA891C9BC8B0003A1096 /* UIImage+WebP.m */,
+			);
+			name = Webp;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -246,6 +266,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6FE4CA981C9BCC1A003A1096 /* Rosetta.webp in Resources */,
 				6FE4CA651C9BC889003A1096 /* LaunchScreen.storyboard in Resources */,
 				6FE4CA621C9BC889003A1096 /* Assets.xcassets in Resources */,
 				6FE4CA601C9BC889003A1096 /* Main.storyboard in Resources */,
@@ -276,6 +297,7 @@
 				6FE4CA5D1C9BC889003A1096 /* ViewController.m in Sources */,
 				6FE4CA5A1C9BC889003A1096 /* AppDelegate.m in Sources */,
 				6FE4CA571C9BC889003A1096 /* main.m in Sources */,
+				6FE4CA8A1C9BC8B0003A1096 /* UIImage+WebP.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,6 +436,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/UseWebpPicture",
+				);
 				INFOPLIST_FILE = UseWebpPicture/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.crame.UseWebpPicture;
@@ -425,6 +451,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/UseWebpPicture",
+				);
 				INFOPLIST_FILE = UseWebpPicture/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.crame.UseWebpPicture;
